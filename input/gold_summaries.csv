@@ -1,0 +1,5 @@
+question_id,summary_id,summary,passage_id
+T01Q01,P01,Yes. You must hold an active membership with either CSIT, SWITCH, or RISC to purchase a ticket. The Hello Rubric system automatically checks your student login credentials to confirm eligibility before checkout.,P01
+T02Q01,P02,You can join RISC for free by visiting the official Hello Rubric registration platform link available directly inside the club's Instagram bio page.,P02
+T03Q01,P03,REECE club merchandise pre-orders are non-refundable and final once the order window closes on Rubric. Refunds are only generated if a product is physically defective.,P03
+T04Q01,P04,When a MATRIX event sells out on Rubric, joining the waiting list places you in line to automatically secure a spot if an order invoice expires or a user cancels their registration.,P04
