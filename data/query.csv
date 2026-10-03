@@ -1,9 +1,8 @@
 ﻿topic_id,topic,question_id,question,answer ,,
 TI01,Computing related clubs,QI01,How many computing clubs are there?,There are 5 computing related clubs at RMIT.,,
 TI01,Computing related clubs,QI02,What are the computing clubs available? ,"CSIT, SWITCH, MATRIX, RISC, REECE",,
-TI02,Cyber Security,QI03,"I am a freshman Cyber Security student, which clubs should i join?", RMIT Information Security Collective (RISC), a student-run group passionate about cybersecurity 
-TI03,Beginner coding,QI04,Any  beginner coding events?,,,
-,,,Which club is the most popular?,,,
+TI02,Cyber Security,QI03,"I am a freshman Cyber Security student, which clubs should i join?", RMIT Information Security Collective (RISC), a student-run group passionate about cybersecurity. They run beginner-friendly capture-the-flag (CTF) challenges, hands-on workshops (like lockpicking), guest lectures, and networking events. You may also be interested in joining other computing clubs such as CSIT, SWITCH, and MATRIX. RMIT CSIT is a broad community for computing and IT students. It is great for general programming help, peer connection, and meeting people across different tech degrees. RMIT Society of Women in Tech (SWITCH) is an inclusive professional and social group supporting equity and networking in the technology sector. Matrix is RMIT's competitive programming club. They solve algorithmic problems, train for contests like ICPC, and get sharper together — whatever your starting point. 
+TI04,Popular clubs,Q05,Which club is the most popular?,,,
 ,,,What is the difference between CSIT and SWITCH?,,,
 ,,,What is the difference between CSIT and MATRIX?,,,
 ,,,What is the difference between CSIT and RISC?,,,
