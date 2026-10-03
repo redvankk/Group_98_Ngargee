@@ -1,7 +1,7 @@
 ﻿topic_id,topic,question_id,question,answer ,,
 TI01,Computing related clubs,QI01,How many computing clubs are there?,There are 5 computing related clubs at RMIT.,,
 TI01,Computing related clubs,QI02,What are the computing clubs available? ,"CSIT, SWITCH, MATRIX, RISC, REECE",,
-TI02,Cyber Security,QI03,"I am a freshman Cyber Security student, which clubs should i join?",CSIT,,
+TI02,Cyber Security,QI03,"I am a freshman Cyber Security student, which clubs should i join?", RMIT Information Security Collective (RISC), a student-run group passionate about cybersecurity 
 TI03,Beginner coding,QI04,Any  beginner coding events?,,,
 ,,,Which club is the most popular?,,,
 ,,,What is the difference between CSIT and SWITCH?,,,
