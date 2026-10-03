@@ -1,0 +1,28 @@
+=== START THE CLUB ASSISTANT ===
+(Make sure the Ollama app is running first)
+
+--- Terminal 1: BACKEND (Command Prompt) ---
+cd C:\Projects\Team98\backend
+.venv\Scripts\activate.bat
+uvicorn main:app --reload --port 8000
+
+Wait for: "Application startup complete."
+Check: http://localhost:8000/health
+
+--- Terminal 2: WEBSITE (new Command Prompt) ---
+cd C:\Projects\Team98
+npm run dev
+
+Open: http://localhost:8443
+
+--- STOP ---
+Press Ctrl + C in each terminal.
+
+--- CHANGE SETTINGS (e.g. retriever) ---
+cd C:\Projects\Team98\backend
+notepad .env
+RETRIEVER=dense | bm25 | hybrid
+Save, then restart Terminal 1 (Ctrl + C, then run uvicorn again).
+
+--- QUICK TEST (backend running, venv active) ---
+python smoke_test.py

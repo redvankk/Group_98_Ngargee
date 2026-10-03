@@ -1,0 +1,40 @@
+# macOS
+.DS_Store
+
+# Environment variables / secrets
+.env
+.env.local
+.env.*.local
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Node / Vite
+node_modules/
+dist/
+.vite/
+
+# IDE
+.vscode/
+.idea/
+
+# Logs / temp
+*.log
+*.tmp
+*.swp
+
+# Local caches / model downloads
+.cache/
+huggingface/
+
+# Local generated model/index artifacts (keep source data/scripts, regenerate locally)
+backend/index/
+backend/vector_store/
+
+# Local AI assistant instructions
+AGENTS.md
+CLAUDE.md

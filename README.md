@@ -1,87 +1,109 @@
-# Group_98_Ngargee
-## Contributors
+# RMIT Clubs Assistant (Team 98)
 
-| Name                         | Student ID |
-| ---------------------------- | ---------- |
-| Maristel Moralejo-Feliciano  | s3992004   |
-| Md Tashfiq Haque Choudhury   | s4200380   |
-| Mohamed Ridhwan Mansoor      | s4203049   |
-| Spoorthi Mallik Mallikarjuna | s4203196   |
-| Navan   Kamalakanthan        | s4219963   |
-| Meghana Ramachandraiah       | s4224049   |
+A chatbot that helps new RMIT students find clubs, compare them and learn how to join. Every answer is built only from verified club information and shows its sources, with links to each club's page, Discord, Instagram and email.
 
-## Requirements
-- python 3.10.8
-- Install all packages in 'requirements.txt' using:
+Built for the Work Integrated Learning project in COSC2669/COSC2816 Case Studies in Data Science (RMIT, 2026), following the test-driven RAG approach of [Walert](https://github.com/rmit-ir/walert).
+
+## Why
+
+O-Week and Campus Fest are overwhelming, and club information is scattered across Rubric, Instagram, Discord and Linktree. Students struggle to find their people, while clubs depend on membership for RUSU funding and survival. The assistant gives students one place to ask, in plain language, and points them to the official club channels.
+
+## How it works
+
+```text
+Student question
+  -> recognise named clubs and acronyms (CSIT, RISC, REECE...)
+  -> hybrid retrieval: meaning-based (dense) + keyword (BM25), merged by rank
+  -> fairness rules: clubs for a specific culture, faith or politics only when the student mentions it
+  -> Llama 3.2 3B (local, via Ollama) answers from those club records only, citing them [1], [2]
+  -> citation check, then answer + source cards with links + suggested follow-up questions
 ```
-   cd Group_98_Ngargee/quantitative_eval
-   pip install -r requirements.txy
+
+- **Runs entirely on one laptop:** free model, no API costs, no student data leaves the machine.
+- **Declines** questions the club data can't answer instead of guessing.
+- **Knowledge base:** 98 RMIT clubs, merged from the team's spreadsheet and the Rubric directory. The five computing clubs (CSIT, RISC, REECE, Matrix, SWITCH) have detailed descriptions, membership tiers and verified links.
+
+## Results
+
+Evaluated on 50 questions in Walert's format: 15 easy, 28 hard (comparisons, eligibility, event dates, lists, paraphrases, typos, fairness) and 7 unanswerable.
+
+**Retrieval** (which clubs are found):
+
+| | Dense | BM25 | **Hybrid (final)** |
+|---|---|---|---|
+| nDCG@3 | 0.805 | 0.844 | 0.843 |
+| Hit@3 (a right club in the top 3) | 0.860 | 0.907 | **0.953** |
+| Hard questions, nDCG@3 | 0.748 | 0.768 | **0.781** |
+| Real questions wrongly rejected | 0% | 4.7% | **0%** |
+
+**Answers** (final system, hybrid):
+
+| Measure | Result |
+|---|---|
+| Faithful: every claim backed by the club records (hand-scored) | 82% |
+| Correctness, 0–2 (hand-scored) | 1.47 overall (1.80 easy, 1.29 hard) |
+| Unanswerable questions handled well | 6 of 7 |
+| Citation precision | 88% |
+| Median response time | 3.8 s |
+
+Answers were hand-scored against the club records. Full outputs are in `backend/eval/results/`.
+
+**Main limitations:** the model sometimes mixes details between clubs it was given together, invents details for clubs with only a placeholder description (41 of 98), gives incomplete answers to "which clubs…" list questions, and can present past events as upcoming. Most errors trace back to gaps in the club data.
+
+## Run it
+
+You need Python 3.11+, Node.js 22 and [Ollama](https://ollama.com/download). Full step-by-step instructions, including Windows, are in **[QUICK_START.md](QUICK_START.md)**.
+
+```bash
+ollama pull llama3.2:3b
+
+# Terminal 1: backend
+cd backend
+python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate.bat
+pip install -r requirements.txt
+cp .env.example .env                                # Windows: copy .env.example .env
+uvicorn main:app --reload --port 8000
+
+# Terminal 2: website
+npm install
+npm run dev                                         # open http://localhost:8443
 ```
 
-## Data 
-All dataset files are located in the `data` folder, which includes files that are generated from RMIT University Student Union (RUSU) website, each club's official website, and social media channels, such as Instagram, Facebook, LinkedIn, Discord, Linktree, and Rubric Club Page. The files include:
+## Evaluate it
 
-1. **File Name: club.csv**\
-   -*Format:* CSV\  
-   -*Description:* This dataset contains high-level, general information about each computing  club. It is optimised for users searching for new clubs or trying to understand what each club does. It contains unique club ID, name, acronym, category, description, and campus location.\
-   -*Columns:*
-     - `club_index`: Unique ID for each club (e.g., CI05)
-     - `club_name`: Name of the RUSU affiliated club as it appears in the RUSU website (e.g., RMIT Matrix)
-     - `club_acronym`: Unique acronym for each club (e.g., Matrix)
-     - `category`: Club category based on RUSU classification (e.g., Social and Special Interest)
-     - `description`: Description of each club as it appears in the Rubric club page, club official website, and/ or social media channels. (e.g., RMIT Matrix is a club for Competitive Programming & Algorithms. We solve algorithmic problems, train for contests like ICPC, and get sharper together, whatever your starting point.  No competitive background needed. MATRIX is open to every RMIT student. Plenty of us started knowing nothing about competitive programming. What matters is the curiosity to pick apart a hard problem and the patience to learn the techniques. Beginners are genuinely welcome. We are affiliated with the RMIT University Student Union (RUSU) and run by a volunteer committee. We focus on algorithmic problem-solving and contest training, a niche the general CS clubs do not fill.)
-     - `rmit_university_campus`: RMIT University campus (e.g., City Campus)
- 
-Total clubs: 5 of 5 RUSU-affiliated whhich are computing-related clubs.
+```bash
+cd backend
+python evaluate_retrieval.py                       # compare dense / BM25 / hybrid (nDCG, Hit@3, MRR)
+python evaluate_retrieval.py --sweep               # tune the relevance thresholds
+python eval_end_to_end.py --retriever hybrid       # ask all 50 questions; writes a scoring sheet
+python eval_end_to_end.py --summarise eval/results/answers_hybrid.csv
+pip install -r requirements-dev.txt && pytest      # unit tests (no model or Ollama needed)
+```
 
+## Repository layout
 
-2. **File Name: membership.csv**\
-   -*Format:* CSV\
-   -*Description:* This dataset indicates membership tiers offered by each club. It is utilised for membership eligibility and restrictions.\
-   -*Columns:*
-     - `club_acronym`: Unique acronym for each club (e.g., RISC).
-     - `full_membership': The highest membership tier for currently enrolled RMIT students, subject to additional eligibility criteria for each club (e.g., Full voting rights at general meetings, must be an RMIT student and study a Technology/ IT / Cyber related degree.)
-     - `associate_membership`: This membership tier is for people interested to join the club who are not currently enrolled at RMIT. (e.g., Open to Alumni, RMIT Staff, students from other universities and the general public.)
-     - `under_18_membership`: Membership category for under 18 years old members (e.g., This membership is for our under 18 years old members! You may be restricted from attending 18+ events and may need a parental consent to attend events. Your membership will be upgraded on your birthday.)
-     - `social_membership`: This tier is for members who do not meet eligibility requirements for full membership (e.g., Open to all current RMIT Students.)
+```text
+backend/
+  main.py                  FastAPI app (/chat, /health, /clubs/search)
+  rag/                     pipeline: retrievers/, generator, citations, club_names, query_hints, followups
+  data/                    clubs_master.csv (knowledge base) + sources and build_dataset.py
+  eval/                    topics.csv, qrels.txt, reference answers, results
+  scraper/                 Playwright scraper for the Rubric club directory
+  tests/                   pytest unit tests
+src/                       React + TypeScript website
+QUICK_START.md             setup and run guide
+```
 
+## Data and privacy
 
-3. **File Name: executive.csv**\
-   -*Format*: CSV\
-   -*Description*: This contains the executive and operational positions and elected officers for each club and the official club email address. The officers change annually during the Annual General Meeting. \
-   -*Columns*:
-     - `club_name`: Name of the RUSU affiliated club as it appears in the RUSU website (e.g., RMIT Matrix)
-     - `club_email`: The official RMIT club email address (e.g., matrix@rmit.edu.au)
-     - `president`: Name of elected president
-     - `vice_president`: Name of elected vice president
-     - `vice_president_operations`: Name of elected vice president of operations
-     - `vice_president_administration`: Name of elected vice president of administration
-     - `secretary`: Name of elected secretary
-     - `treasurer`: Name of elected treasurer
-     - `social_media_manager`: Name of elected social media manager 
-     - `sponsorship_officer`: Name of elected sponsorship officer
-     - `events_officer`: Name of elected events officer
+Club information comes from public RUSU/Rubric pages and club channels, collected by the team. Committee member names for the five computing clubs are included pending a team decision on whether the assistant should show them.
 
-4. **File Name: social.csv**\
-   -*Format*: CSV\
-   -*Description*: This is the digital map of the club ecosystem. It is multi-purpose, it answers user queries about where to find club specific things online, it directs users to the official email address, and it provides the raw seeding URLs for the dynamic web-scraping pipelines. This includes RMIT email address, website, rubric page, and social media channels which links to their events page. \
-   -*Columns*:
-     - `club_email`: The official RMIT club email address (e.g., matrix@rmit.edu.au)
-     - `instagram`: Link to club Instagram (e.g., https://www.instagram.com/matrix.rmit/) 	 		
-     - `facebook`: Link to club Facebook page (e.g., https://www.facebook.com/people/RMIT-Matrix/61579640997617/) 
-     - `linkedin`: Link to club LinkedIn page (e.g., https://www.linkedin.com/company/rmit-matrix/)
-     - `discord`: Link to club Discord server(e.g., https://discord.com/invite/Fm8s2en9mY)
-     - `linktree`: Link to club Linktree (e.g., https://linktr.ee/matrix.rmit)
-     - `website`: Link to club website (e.g., https://rmitmatrix.com/)	
-     - `rubric_page`: Link to club Rubric page (e.g., https://campus.hellorubric.com/?s=14937)
-  
-5. **File Name: query.csv**\
-   -*Format*: CSV\
-   -*Description*: Frequently asked questions and user story related queries are in this dataset along with the answers\
-   -*Columns*:
-     - `topic_id`: Unique topic ID (e.g., TI01)
-     - `topic`:  (e.g.,computing related clubs)
-     - `question_id`: Unique question ID (e.g., QI01)
-     - `question`: (e.g., How many computing clubs are there?)
-     - `answer`: (e.g., There are 5 computing related clubs at RMIT.)
-  ** NOTE: generate_data.py is a dummy set
+## Team
+
+Group 98, mentored by Lin Tian: Maristel Moralejo-Feliciano, Md Tashfiq Haque Choudhury, Mohamed Ridhwan Mansoor, Spoorthi Mallik Mallikarjuna, Navan Kamalakanthan, Meghana Ramachandraiah.
+
+## Acknowledgements
+
+Our pipeline and evaluation follow Walert:
+
+> Pathiyan Cherumanal, S., Tian, L., Abushaqra, F. M., et al. (2024). *Walert: Putting Conversational Information Seeking Knowledge into Action by Building and Evaluating a Large Language Model-Powered Chatbot.* CHIIR '24. https://doi.org/10.1145/3627508.3638309
