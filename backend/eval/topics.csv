@@ -1,0 +1,51 @@
+topic_id,topic,question_type,difficulty,question_id,question
+E01,How do I join RMIT Matrix?,factual,easy,E01Q01,How do I join RMIT Matrix?
+E02,What's the email for CSIT?,factual,easy,E02Q01,What's the email for CSIT?
+E03,Is there a chess club?,factual,easy,E03Q01,Is there a chess club?
+E04,Is there an anime club?,factual,easy,E04Q01,Is there an anime club?
+E05,Is there a Filipino student club?,factual,easy,E05Q01,Is there a Filipino student club?
+E06,What does the Astronomy Society do?,factual,easy,E06Q01,What does the Astronomy Society do?
+E07,Is there a car club?,factual,easy,E07Q01,Is there a car club?
+E08,Is there a philosophy club?,factual,easy,E08Q01,Is there a philosophy club?
+E09,Are there any clubs for women in technology?,recommendation,easy,E09Q01,Are there any clubs for women in technology?
+E10,Is there a Sri Lankan club?,factual,easy,E10Q01,Is there a Sri Lankan club?
+E11,Where does the Board Game Association meet?,factual,easy,E11Q01,Where does the Board Game Association meet?
+E12,What's the Discord link for RISC?,factual,easy,E12Q01,What's the Discord link for RISC?
+E13,Is there a fashion club?,factual,easy,E13Q01,Is there a fashion club?
+E14,Is there a history club?,factual,easy,E14Q01,Is there a history club?
+E15,How can I contact the Indian Club?,factual,easy,E15Q01,How can I contact the Indian Club?
+H01,What is the difference between CSIT and MATRIX?,comparison,hard,H01Q01,What is the difference between CSIT and MATRIX?
+H02,How is REECE different from Engineers Without Borders?,comparison,hard,H02Q01,How is REECE different from Engineers Without Borders?
+H03,Who is SWITCH for compared with Females+ in RMIT Engineering?,comparison,hard,H03Q01,Who is SWITCH for compared with Females+ in RMIT Engineering?
+H04,I like coding but I'm not into competitions. Should I join CSIT or Matrix?,recommendation,hard,H04Q01,I like coding but I'm not into competitions. Should I join CSIT or Matrix?
+H05,I'm not an RMIT student. Can I still join RISC?,eligibility,hard,H05Q01,I'm not an RMIT student. Can I still join RISC?
+H06,I'm 17. Can I join CSIT?,eligibility,hard,H06Q01,I'm 17. Can I join CSIT?
+H07,Can a male computer science student get full membership of SWITCH?,eligibility,hard,H07Q01,Can a male computer science student get full membership of SWITCH?
+H08,I study business. Can I be a full member of REECE?,eligibility,hard,H08Q01,I study business. Can I be a full member of REECE?
+H09,Do I have to sign up for Matrix again every year?,eligibility,hard,H09Q01,Do I have to sign up for Matrix again every year?
+H10,Which clubs have free membership?,list,hard,H10Q01,Which clubs have free membership?
+H11,Is the RMIT Engineering Ball still coming up?,events,hard,H11Q01,Is the RMIT Engineering Ball still coming up?
+H12,Are there any balls coming up later this year?,events,hard,H12Q01,Are there any balls coming up later this year?
+H13,When is the next Chess Club tournament?,events,hard,H13Q01,When is the next Chess Club tournament?
+H14,What events does SWITCH have coming up?,events,hard,H14Q01,What events does SWITCH have coming up?
+H15,How many computing clubs are there?,list,hard,H15Q01,How many computing clubs are there?
+H16,Which computing clubs can people from outside RMIT join?,list,hard,H16Q01,Which computing clubs can people from outside RMIT join?
+H17,Which clubs run trivia nights?,list,hard,H17Q01,Which clubs run trivia nights?
+H18,I want to learn reverse engineering and digital forensics.,recommendation,hard,H18Q01,I want to learn reverse engineering and digital forensics.
+H19,I'd like to train for ICPC.,recommendation,hard,H19Q01,I'd like to train for ICPC.
+H20,Where can I find people to play D&D with?,recommendation,hard,H20Q01,Where can I find people to play D&D with?
+H21,I enjoy looking at the stars and photographing the night sky.,recommendation,hard,H21Q01,I enjoy looking at the stars and photographing the night sky.
+H22,I'm a fine arts student who likes printmaking.,recommendation,hard,H22Q01,I'm a fine arts student who likes printmaking.
+H23,how do i join swtich,factual,hard,H23Q01,how do i join swtich
+H24,whats the discord for reece,factual,hard,H24Q01,whats the discord for reece
+H25,I'm new to Melbourne and want to make friends.,fairness,hard,H25Q01,I'm new to Melbourne and want to make friends.
+H26,I'm from Singapore and want to make friends.,fairness,hard,H26Q01,I'm from Singapore and want to make friends.
+H27,"I am a freshman Cyber Security student, which clubs should I join?",recommendation,hard,H27Q01,"I am a freshman Cyber Security student, which clubs should I join?"
+H28,Which club should I join to get better at coding interviews and algorithms?,recommendation,hard,H28Q01,Which club should I join to get better at coding interviews and algorithms?
+U01,Is there a quidditch club?,unanswerable,unanswerable,U01Q01,Is there a quidditch club?
+U02,Is there a rowing club?,unanswerable,unanswerable,U02Q01,Is there a rowing club?
+U03,What are the RMIT library opening hours?,unanswerable,unanswerable,U03Q01,What are the RMIT library opening hours?
+U04,Which club is the most popular?,unanswerable,unanswerable,U04Q01,Which club is the most popular?
+U05,Which clubs help the most with career placements/employment opportunities?,unanswerable,unanswerable,U05Q01,Which clubs help the most with career placements/employment opportunities?
+U06,I like Harry Potter very much.,unanswerable,unanswerable,U06Q01,I like Harry Potter very much.
+U07,How much does the RMIT gym membership cost?,unanswerable,unanswerable,U07Q01,How much does the RMIT gym membership cost?

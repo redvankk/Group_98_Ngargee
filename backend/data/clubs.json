@@ -1,0 +1,102 @@
+[
+  {
+    "id": "data-ai",
+    "name": "RMIT Data Science & AI Club (Demo)",
+    "category": "Technology",
+    "description": "A demo student community for people interested in data science, artificial intelligence, machine learning and analytics.",
+    "activities": ["Python workshops", "machine learning study sessions", "industry networking", "data challenges"],
+    "membership": "Open to students interested in data science and AI. Demo information only.",
+    "contact": "data-ai@example.edu",
+    "url": "https://example.com/clubs/data-ai"
+  },
+  {
+    "id": "music",
+    "name": "RMIT Music Collective (Demo)",
+    "category": "Music & Creative",
+    "description": "A demo community for student musicians who want to meet collaborators, rehearse, jam and perform live.",
+    "activities": ["jam sessions", "open mic nights", "student performances", "band networking"],
+    "membership": "Open to beginners and experienced musicians. Demo information only.",
+    "contact": "music@example.edu",
+    "url": "https://example.com/clubs/music"
+  },
+  {
+    "id": "performing-arts",
+    "name": "RMIT Performing Arts Society (Demo)",
+    "category": "Creative & Performance",
+    "description": "A demo club focused on theatre, stage performance, acting and collaborative creative projects.",
+    "activities": ["theatre rehearsals", "acting workshops", "stage productions", "performance showcases"],
+    "membership": "Students can join throughout the semester. Demo information only.",
+    "contact": "performing@example.edu",
+    "url": "https://example.com/clubs/performing-arts"
+  },
+  {
+    "id": "photography",
+    "name": "RMIT Photography Club (Demo)",
+    "category": "Creative",
+    "description": "A demo club for students interested in photography, photo walks, editing and visual storytelling.",
+    "activities": ["photo walks", "editing workshops", "portfolio reviews", "photography challenges"],
+    "membership": "Join through the club registration page. A small membership fee may apply in this demo scenario.",
+    "contact": "photo@example.edu",
+    "url": "https://example.com/clubs/photography"
+  },
+  {
+    "id": "entrepreneurship",
+    "name": "RMIT Entrepreneurship Society (Demo)",
+    "category": "Business & Professional",
+    "description": "A demo student society for entrepreneurship, startup ideas, innovation and meeting founders.",
+    "activities": ["startup pitch nights", "founder talks", "networking", "idea validation workshops"],
+    "membership": "Open to students from any discipline. Demo information only.",
+    "contact": "startup@example.edu",
+    "url": "https://example.com/clubs/entrepreneurship"
+  },
+  {
+    "id": "international",
+    "name": "RMIT International Students Network (Demo)",
+    "category": "Social & Cultural",
+    "description": "A demo social community designed to help international students make friends, settle into Melbourne and meet people from different backgrounds.",
+    "activities": ["welcome events", "social meetups", "city activities", "peer networking"],
+    "membership": "Open to domestic and international students. Demo information only.",
+    "contact": "international@example.edu",
+    "url": "https://example.com/clubs/international"
+  },
+  {
+    "id": "indian",
+    "name": "RMIT Indian Students Association (Demo)",
+    "category": "Cultural",
+    "description": "A demo cultural community for students interested in Indian culture, festivals, food and social events.",
+    "activities": ["cultural festivals", "social gatherings", "music and dance events", "community networking"],
+    "membership": "Open to anyone interested in Indian culture. Demo information only.",
+    "contact": "india@example.edu",
+    "url": "https://example.com/clubs/indian"
+  },
+  {
+    "id": "cyber",
+    "name": "RMIT Cyber Security Club (Demo)",
+    "category": "Technology",
+    "description": "A demo technology club for students interested in cyber security, ethical hacking and security careers.",
+    "activities": ["capture-the-flag events", "security workshops", "career talks", "technical challenges"],
+    "membership": "Open to students at all skill levels. Demo information only.",
+    "contact": "cyber@example.edu",
+    "url": "https://example.com/clubs/cyber"
+  },
+  {
+    "id": "outdoors",
+    "name": "RMIT Outdoors Club (Demo)",
+    "category": "Sport & Recreation",
+    "description": "A demo club for students interested in hiking, outdoor trips, nature and recreational activities.",
+    "activities": ["day hikes", "weekend trips", "social walks", "outdoor skills sessions"],
+    "membership": "Open to students who enjoy outdoor activities. Demo information only.",
+    "contact": "outdoors@example.edu",
+    "url": "https://example.com/clubs/outdoors"
+  },
+  {
+    "id": "debate",
+    "name": "RMIT Debate & Public Speaking Club (Demo)",
+    "category": "Professional Development",
+    "description": "A demo club for improving public speaking, argumentation, presentation confidence and communication skills.",
+    "activities": ["debates", "public speaking practice", "presentation workshops", "communication games"],
+    "membership": "Open to beginners and experienced speakers. Demo information only.",
+    "contact": "debate@example.edu",
+    "url": "https://example.com/clubs/debate"
+  }
+]

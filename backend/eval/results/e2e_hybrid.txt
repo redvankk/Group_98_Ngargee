@@ -1,0 +1,64 @@
+[1/50] E01Q01 rag             20.6s  How do I join RMIT Matrix?
+[2/50] E02Q01 rag              3.3s  What's the email for CSIT?
+[3/50] E03Q01 rag              3.0s  Is there a chess club?
+[4/50] E04Q01 rag              3.5s  Is there an anime club?
+[5/50] E05Q01 rag              3.5s  Is there a Filipino student club?
+[6/50] E06Q01 rag              4.3s  What does the Astronomy Society do?
+[7/50] E07Q01 rag              3.5s  Is there a car club?
+[8/50] E08Q01 rag              3.1s  Is there a philosophy club?
+[9/50] E09Q01 rag              4.3s  Are there any clubs for women in technology?
+[10/50] E10Q01 rag              4.2s  Is there a Sri Lankan club?
+[11/50] E11Q01 rag              3.5s  Where does the Board Game Association meet?
+[12/50] E12Q01 rag              3.4s  What's the Discord link for RISC?
+[13/50] E13Q01 rag              3.4s  Is there a fashion club?
+[14/50] E14Q01 rag              3.7s  Is there a history club?
+[15/50] E15Q01 rag              3.3s  How can I contact the Indian Club?
+[16/50] H01Q01 rag              4.3s  What is the difference between CSIT and MATRIX?
+[17/50] H02Q01 rag              6.6s  How is REECE different from Engineers Without Borders?
+[18/50] H03Q01 rag              6.6s  Who is SWITCH for compared with Females+ in RMIT Engineering
+[19/50] H04Q01 rag              6.1s  I like coding but I'm not into competitions. Should I join C
+[20/50] H05Q01 rag              4.5s  I'm not an RMIT student. Can I still join RISC?
+[21/50] H06Q01 rag              4.1s  I'm 17. Can I join CSIT?
+[22/50] H07Q01 rag              4.2s  Can a male computer science student get full membership of S
+[23/50] H08Q01 rag              3.8s  I study business. Can I be a full member of REECE?
+[24/50] H09Q01 rag              3.8s  Do I have to sign up for Matrix again every year?
+[25/50] H10Q01 rag              3.5s  Which clubs have free membership?
+[26/50] H11Q01 rag              3.8s  Is the RMIT Engineering Ball still coming up?
+[27/50] H12Q01 rag              4.3s  Are there any balls coming up later this year?
+[28/50] H13Q01 rag              3.9s  When is the next Chess Club tournament?
+[29/50] H14Q01 rag              3.8s  What events does SWITCH have coming up?
+[30/50] H15Q01 rag              3.3s  How many computing clubs are there?
+[31/50] H16Q01 rag              4.0s  Which computing clubs can people from outside RMIT join?
+[32/50] H17Q01 rag              4.3s  Which clubs run trivia nights?
+[33/50] H18Q01 rag              5.7s  I want to learn reverse engineering and digital forensics.
+[34/50] H19Q01 rag              4.0s  I'd like to train for ICPC.
+[35/50] H20Q01 rag              3.4s  Where can I find people to play D&D with?
+[36/50] H21Q01 rag              3.5s  I enjoy looking at the stars and photographing the night sky
+[37/50] H22Q01 rag              5.5s  I'm a fine arts student who likes printmaking.
+[38/50] H23Q01 rag              3.3s  how do i join swtich
+[39/50] H24Q01 rag              3.4s  whats the discord for reece
+[40/50] H25Q01 rag              5.9s  I'm new to Melbourne and want to make friends.
+[41/50] H26Q01 rag              6.5s  I'm from Singapore and want to make friends.
+[42/50] H27Q01 rag              7.2s  I am a freshman Cyber Security student, which clubs should I
+[43/50] H28Q01 rag              5.3s  Which club should I join to get better at coding interviews 
+[44/50] U01Q01 rag              3.2s  Is there a quidditch club?
+[45/50] U02Q01 rag              3.8s  Is there a rowing club?
+[46/50] U03Q01 rag              3.3s  What are the RMIT library opening hours?
+[47/50] U04Q01 rag              3.9s  Which club is the most popular?
+[48/50] U05Q01 rag              5.1s  Which clubs help the most with career placements/employment 
+[49/50] U06Q01 no-match         0.0s  I like Harry Potter very much.
+[50/50] U07Q01 rag              3.4s  How much does the RMIT gym membership cost?
+
+=== 50 questions (43 answerable, 7 unanswerable) ===
+Answered rate (answerable)      95.3%
+Correct declines (unanswerable) 85.7%
+Citation precision              88.0%
+Citation hit rate               95.1%  (of answers that cite something)
+Response time (s)               mean 4.4 | median 3.8 | p90 6.5
+Citations corrected             1 in 1 answers
+Modes                           {'rag': 49, 'no-match': 1}
+ROUGE-L F1 vs reference         0.277  (2 questions)
+Answered rate by type           comparison: 100.0%, eligibility: 100.0%, events: 75.0%, factual: 93.8%, fairness: 100.0%, list: 100.0%, recommendation: 100.0%
+Answered rate by difficulty     easy: 93.3%, hard: 96.4%
+
+Answers saved to eval\results\answers_hybrid.csv; fill in 'faithful' and 'correct', then run with --summarise.

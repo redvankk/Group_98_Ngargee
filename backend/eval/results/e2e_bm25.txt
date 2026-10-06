@@ -1,0 +1,69 @@
+[1/58] T01Q01 rag              4.6s  How do I join RMIT Matrix?
+[2/58] T01Q02 rag              3.3s  What's the sign-up link for Matrix?
+[3/58] T02Q01 rag              3.0s  How can I contact CSIT?
+[4/58] T02Q02 rag              3.3s  What's the email for the Computer Science and IT Society?
+[5/58] T03Q01 rag              3.2s  Who can join the Information Security Collective?
+[6/58] T03Q02 rag              3.5s  Do I need cyber experience to join RISC?
+[7/58] T04Q01 rag              3.3s  When does the Board Game Association meet?
+[8/58] T04Q02 rag              4.2s  Where are the board game sessions held?
+[9/58] T05Q01 rag              4.5s  What does the Astronomy Society do?
+[10/58] T05Q02 rag              3.6s  Tell me about the astronomy club.
+[11/58] T06Q01 rag              5.2s  What's the difference between CSIT and RMIT Matrix?
+[12/58] T06Q02 rag              5.0s  Should I join CSIT or Matrix if I like coding?
+[13/58] T07Q01 rag              5.2s  Compare AESA and the Mechatronics Student Association.
+[14/58] T07Q02 rag              3.9s  How is AESA different from the mechatronics club?
+[15/58] T08Q01 rag              5.3s  I'm into cybersecurity and CTFs. Which club should I join?
+[16/58] T08Q02 rag              3.7s  Is there a club for ethical hacking?
+[17/58] T09Q01 rag              3.3s  Is there a club for competitive programming?
+[18/58] T09Q02 rag              3.0s  I want to practise algorithms and coding contests.
+[19/58] T10Q01 rag              4.1s  Are there any clubs for women in technology?
+[20/58] T10Q02 rag              3.8s  Is there a club for women studying engineering?
+[21/58] T11Q01 rag              5.5s  I like board games and Dungeons & Dragons.
+[22/58] T11Q02 rag              3.6s  Are there any tabletop gaming clubs?
+[23/58] T12Q01 rag              3.2s  Is there an anime club?
+[24/58] T12Q02 rag              4.0s  I love manga and video games, any clubs for that?
+[25/58] T13Q01 rag              3.5s  I want to play chess.
+[26/58] T13Q02 rag              3.7s  Are there chess tournaments at RMIT?
+[27/58] T14Q01 rag              2.8s  Is there a car club?
+[28/58] T14Q02 no-match         0.0s  I'm into cars and motorsport.
+[29/58] T15Q01 rag              3.6s  I'm interested in stargazing and astrophotography.
+[30/58] T15Q02 rag              4.5s  Any clubs for space and astronomy fans?
+[31/58] T16Q01 rag              4.1s  Is there a Filipino student club?
+[32/58] T16Q02 rag              3.4s  I'm from the Philippines, where can I meet other Filipinos?
+[33/58] T17Q01 rag              3.2s  Is there an Indonesian students' club?
+[34/58] T17Q02 rag              5.3s  I'm an Indonesian student looking for community.
+[35/58] T18Q01 rag              3.5s  Is there a Sri Lankan club?
+[36/58] T18Q02 rag              3.6s  Where can I celebrate Sri Lankan culture at RMIT?
+[37/58] T19Q01 rag              4.9s  I want to get into consulting.
+[38/58] T19Q02 rag              5.1s  Is there a club for business and consulting careers?
+[39/58] T20Q01 rag              3.0s  Is there a philosophy club?
+[40/58] T20Q02 rag              3.6s  I like debating big questions.
+[41/58] T21Q01 rag              5.9s  I'm from Singapore and want to make friends.
+[42/58] T21Q02 rag              3.7s  Is there a club for Singaporean students?
+[43/58] T22Q01 rag              3.5s  Are there clubs for drawing or printmaking?
+[44/58] T22Q02 rag              4.9s  I'm a fine arts student who likes printmaking.
+[45/58] T23Q01 rag              3.7s  Are there Christian groups on campus?
+[46/58] T23Q02 rag              4.1s  Is there a church group or Christian fellowship?
+[47/58] T24Q01 rag              4.0s  Is there a technology ball coming up?
+[48/58] T24Q02 rag              3.5s  When is the CSIT x SWITCH Technology Ball?
+[49/58] U01Q01 no-match         0.0s  Is there a quidditch club?
+[50/58] U01Q02 no-match         0.0s  Where can I play quidditch at RMIT?
+[51/58] U02Q01 no-match         0.0s  Is there a rowing club?
+[52/58] U02Q02 rag              4.2s  I want to try rowing at uni.
+[53/58] U03Q01 no-match         0.0s  What is the capital of France?
+[54/58] U03Q02 rag              3.1s  How far is Melbourne from Sydney?
+[55/58] U04Q01 rag              3.3s  When is the RMIT library open?
+[56/58] U04Q02 no-match         0.0s  What are the library opening hours?
+[57/58] U05Q01 rag              3.2s  Which club has the most members?
+[58/58] U05Q02 rag              3.3s  What's the biggest club at RMIT?
+
+=== 58 questions (48 answerable, 10 unanswerable) ===
+Answered rate (answerable)      93.8%
+Correct declines (unanswerable) 100.0%
+Citation precision              89.5%
+Citation hit rate               97.8%  (of answers that cite something)
+Response time (s)               mean 3.5 | median 3.6 | p90 5.2
+Modes                           {'rag': 52, 'no-match': 6}
+Answered rate by type           comparison: 75.0%, events: 100.0%, factual: 100.0%, recommendation: 93.8%
+
+Answers saved to eval\results\answers_bm25.csv; fill in 'faithful' and 'correct', then run with --summarise.

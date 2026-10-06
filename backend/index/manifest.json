@@ -1,0 +1,6 @@
+{
+  "fingerprint": "a5eb371755c17f753184dcc6b1db0b0ad6da56cd7543601a54907b5d20d57f32",
+  "embedding_model": "sentence-transformers/multi-qa-MiniLM-L6-cos-v1",
+  "chunks": 246,
+  "dimensions": 384
+}

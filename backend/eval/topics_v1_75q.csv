@@ -1,0 +1,76 @@
+topic_id,topic,question_type,question_id,question
+T01,joining RMIT Matrix,factual,T01Q01,How do I join RMIT Matrix?
+T01,joining RMIT Matrix,factual,T01Q02,What's the sign-up link for Matrix?
+T02,contacting CSIT,factual,T02Q01,How can I contact CSIT?
+T02,contacting CSIT,factual,T02Q02,What's the email for the Computer Science and IT Society?
+T03,who can join RISC,factual,T03Q01,Who can join the Information Security Collective?
+T03,who can join RISC,factual,T03Q02,Do I need cyber experience to join RISC?
+T04,when the board game club meets,factual,T04Q01,When does the Board Game Association meet?
+T04,when the board game club meets,factual,T04Q02,Where are the board game sessions held?
+T05,what the Astronomy Society does,factual,T05Q01,What does the Astronomy Society do?
+T05,what the Astronomy Society does,factual,T05Q02,Tell me about the astronomy club.
+T06,CSIT vs Matrix,comparison,T06Q01,What's the difference between CSIT and RMIT Matrix?
+T06,CSIT vs Matrix,comparison,T06Q02,Should I join CSIT or Matrix if I like coding?
+T07,AESA vs Mechatronics,comparison,T07Q01,Compare AESA and the Mechatronics Student Association.
+T07,AESA vs Mechatronics,comparison,T07Q02,How is AESA different from the mechatronics club?
+T08,cybersecurity and CTFs,recommendation,T08Q01,I'm into cybersecurity and CTFs. Which club should I join?
+T08,cybersecurity and CTFs,recommendation,T08Q02,Is there a club for ethical hacking?
+T09,competitive programming,recommendation,T09Q01,Is there a club for competitive programming?
+T09,competitive programming,recommendation,T09Q02,I want to practise algorithms and coding contests.
+T10,women in technology and engineering,recommendation,T10Q01,Are there any clubs for women in technology?
+T10,women in technology and engineering,recommendation,T10Q02,Is there a club for women studying engineering?
+T11,board and tabletop games,recommendation,T11Q01,I like board games and Dungeons & Dragons.
+T11,board and tabletop games,recommendation,T11Q02,Are there any tabletop gaming clubs?
+T12,anime and manga,recommendation,T12Q01,Is there an anime club?
+T12,anime and manga,recommendation,T12Q02,"I love manga and video games, any clubs for that?"
+T13,chess,recommendation,T13Q01,I want to play chess.
+T13,chess,recommendation,T13Q02,Are there chess tournaments at RMIT?
+T14,cars,recommendation,T14Q01,Is there a car club?
+T14,cars,recommendation,T14Q02,I'm into cars and motorsport.
+T15,stargazing,recommendation,T15Q01,I'm interested in stargazing and astrophotography.
+T15,stargazing,recommendation,T15Q02,Any clubs for space and astronomy fans?
+T16,Filipino community,recommendation,T16Q01,Is there a Filipino student club?
+T16,Filipino community,recommendation,T16Q02,"I'm from the Philippines, where can I meet other Filipinos?"
+T17,Indonesian community,recommendation,T17Q01,Is there an Indonesian students' club?
+T17,Indonesian community,recommendation,T17Q02,I'm an Indonesian student looking for community.
+T18,Sri Lankan culture,recommendation,T18Q01,Is there a Sri Lankan club?
+T18,Sri Lankan culture,recommendation,T18Q02,Where can I celebrate Sri Lankan culture at RMIT?
+T19,consulting careers,recommendation,T19Q01,I want to get into consulting.
+T19,consulting careers,recommendation,T19Q02,Is there a club for business and consulting careers?
+T20,philosophy and debate,recommendation,T20Q01,Is there a philosophy club?
+T20,philosophy and debate,recommendation,T20Q02,I like debating big questions.
+T21,Singaporean students making friends,recommendation,T21Q01,I'm from Singapore and want to make friends.
+T21,Singaporean students making friends,recommendation,T21Q02,Is there a club for Singaporean students?
+T22,printmaking and drawing,recommendation,T22Q01,Are there clubs for drawing or printmaking?
+T22,printmaking and drawing,recommendation,T22Q02,I'm a fine arts student who likes printmaking.
+T23,Christian groups,recommendation,T23Q01,Are there Christian groups on campus?
+T23,Christian groups,recommendation,T23Q02,Is there a church group or Christian fellowship?
+T24,the Technology Ball,events,T24Q01,Is there a technology ball coming up?
+T24,the Technology Ball,events,T24Q02,When is the CSIT x SWITCH Technology Ball?
+U01,quidditch,unanswerable,U01Q01,Is there a quidditch club?
+U01,quidditch,unanswerable,U01Q02,Where can I play quidditch at RMIT?
+U02,rowing,unanswerable,U02Q01,Is there a rowing club?
+U02,rowing,unanswerable,U02Q02,I want to try rowing at uni.
+U03,off-topic geography,unanswerable,U03Q01,What is the capital of France?
+U03,off-topic geography,unanswerable,U03Q02,How far is Melbourne from Sydney?
+U04,library hours,unanswerable,U04Q01,When is the RMIT library open?
+U04,library hours,unanswerable,U04Q02,What are the library opening hours?
+U05,club size,unanswerable,U05Q01,Which club has the most members?
+U05,club size,unanswerable,U05Q02,What's the biggest club at RMIT?
+T25,the computing clubs,factual,T25Q01,How many computing clubs are there?
+T25,the computing clubs,factual,T25Q02,What are the computing clubs available?
+T26,clubs for a first-year cyber security student,recommendation,T26Q01,"I am a freshman Cyber Security student, which clubs should I join?"
+T27,CSIT vs SWITCH,comparison,T27Q01,What is the difference between CSIT and SWITCH?
+T28,CSIT vs Matrix,comparison,T28Q01,What is the difference between CSIT and MATRIX?
+T29,CSIT vs RISC,comparison,T29Q01,What is the difference between CSIT and RISC?
+T30,CSIT vs REECE,comparison,T30Q01,What is the difference between CSIT and REECE?
+T31,SWITCH vs Matrix,comparison,T31Q01,What is the difference between SWITCH and MATRIX?
+T32,SWITCH vs RISC,comparison,T32Q01,What is the difference between SWITCH and RISC?
+U06,most popular club,unanswerable,U06Q01,Which club is the most popular?
+U07,best club for jobs,unanswerable,U07Q01,Which clubs help the most with career placements/employment opportunities?
+T33,history,recommendation,T33Q01,I am a history buff.
+T33,history,recommendation,T33Q02,Is there a history club?
+U08,Harry Potter,unanswerable,U08Q01,I like Harry Potter very much.
+U08,Harry Potter,unanswerable,U08Q02,Is there a Harry Potter club?
+U09,reading and social media,unanswerable,U09Q01,I like reading.
+U09,reading and social media,unanswerable,U09Q02,I like scrolling reels and stuff.

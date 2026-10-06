@@ -1,0 +1,18 @@
+retriever  nDCG@1  nDCG@3  nDCG@5  Hit@3    MRR  Rejected False rej.
+dense       0.814   0.805   0.821  0.860  0.854     0.143      0.000
+bm25        0.849   0.844   0.846  0.907  0.888     0.571      0.047
+hybrid      0.802   0.843   0.837  0.953  0.880     0.143      0.000
+
+nDCG@3 by question type
+retriever      comparison     eligibility          events         factual        fairness            list  recommendation
+dense               1.000           1.000           0.867           0.875           0.617           0.617           0.603
+bm25                1.000           1.000           0.750           0.938           0.574           0.941           0.596
+hybrid              1.000           1.000           0.824           0.914           0.735           0.941           0.567
+
+nDCG@3 by difficulty
+retriever     easy     hard
+dense        0.911    0.748
+bm25         0.984    0.768
+hybrid       0.959    0.781
+
+50 questions. Run files: eval\runs/

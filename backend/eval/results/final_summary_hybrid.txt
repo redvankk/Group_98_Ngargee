@@ -1,0 +1,15 @@
+
+=== 50 questions (43 answerable, 7 unanswerable) ===
+Answered rate (answerable)      95.3%
+Correct declines (unanswerable) 85.7%
+Citation precision              88.0%
+Citation hit rate               95.1%  (of answers that cite something)
+Response time (s)               mean 4.4 | median 3.8 | p90 6.5
+Citations corrected             1 in 1 answers
+Modes                           {'rag': 49, 'no-match': 1}
+ROUGE-L F1 vs reference         0.277  (2 questions)
+Faithful (hand-scored)          82.0%  (50 scored)
+Correctness (hand-scored, 0-2)  mean 1.47  (43 scored)
+Answered rate by type           comparison: 100.0%, eligibility: 100.0%, events: 75.0%, factual: 93.8%, fairness: 100.0%, list: 100.0%, recommendation: 100.0%
+Answered rate by difficulty     easy: 93.3%, hard: 96.4%
+Correctness by difficulty       easy: 1.80, hard: 1.29

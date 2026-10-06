@@ -1,0 +1,12 @@
+[
+  {"question": "Are there clubs related to machine learning and AI?", "expected": "data-ai"},
+  {"question": "I want to play live music and find people to jam with", "expected": "music"},
+  {"question": "Where can I practise acting and stage performance?", "expected": "performing-arts"},
+  {"question": "I want photo walks and help with editing photos", "expected": "photography"},
+  {"question": "I have a startup idea and want to meet founders", "expected": "entrepreneurship"},
+  {"question": "I am new to Melbourne and want to make friends", "expected": "international"},
+  {"question": "Are there Indian cultural events and social gatherings?", "expected": "indian"},
+  {"question": "I want ethical hacking and capture the flag competitions", "expected": "cyber"},
+  {"question": "Which club goes hiking and runs outdoor trips?", "expected": "outdoors"},
+  {"question": "I want to become more confident at presentations and speeches", "expected": "debate"}
+]
